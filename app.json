@@ -1,4 +1,29 @@
- 
- ​{ 
- ​   ​"stack"​: ​"​heroku-16​" 
- ​}
+{
+  "name": "Optic Character Recognizer",
+  "description": "A telegram bot for Recognize any Character of photo",
+  "logo": "https://telegra.ph/file/6a3b1febade2313dd0dca.jpg",
+  "keywords": [
+    "Youtube","YoutubeDownloader"
+  ],
+  "repository": "https://github.com/Boburjon04/vidpro",
+  "success_url": "https://t.me/OCR_ProBot",
+  "website": "https://github.com/Boburjon04/ocrbot",
+  "env": {
+        "API_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
+        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
+        "BOT_TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true}
+  },
+      "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+
+
+}
