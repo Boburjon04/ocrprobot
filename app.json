@@ -9,8 +9,6 @@
   "success_url": "https://t.me/OCR_ProBot",
   "website": "https://github.com/Boburjon04/ocrbot",
   "env": {
-        "API_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
-        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
         "BOT_TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true}
   },
       "buildpacks": [
